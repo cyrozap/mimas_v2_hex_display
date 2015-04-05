@@ -31,8 +31,8 @@ module display_hex_byte(
 
 	reg [7:0] segments_out;
 	reg [2:0] segments_enable_out;
-	assign segments = segments_out;
-	assign segments_enable = segments_enable_out;
+	assign segments = ~segments_out;
+	assign segments_enable = ~segments_enable_out;
 
 	wire [7:0] high_segments;
 	wire [7:0] low_segments;
