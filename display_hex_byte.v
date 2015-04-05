@@ -22,7 +22,7 @@ module display_hex_byte(
 	output wire [2:0] segments_enable
 	);
 
-	parameter refresh_rate = 333;
+	parameter refresh_rate = 1000;
 	parameter sys_clk_freq = 100000000;
 
 	localparam clk_divider = sys_clk_freq / (refresh_rate * 3);
