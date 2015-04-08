@@ -27,7 +27,7 @@ module display_hex_byte(
 
 	localparam clk_divider = sys_clk_freq / (refresh_rate * 3);
 
-	reg [32:0] divider;
+	reg [31:0] divider;
 
 	reg [7:0] segments_out;
 	reg [2:0] segments_enable_out;
